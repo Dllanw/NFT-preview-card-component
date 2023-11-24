@@ -52,14 +52,16 @@ img {
 
 /* MAIN */
 .background {
-
+    background-color: var(--card-BG);
 }
 .card { 
     max-height: 50rem;
-    max-inline-size: 28rem;
+    max-inline-size: 26rem;
     min-inline-size: 20rem;
     padding: 1.8rem;
-    background-color: var(--card-BG);
+    box-shadow: 2px 19px 45px 14px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 2px 19px 45px 14px rgba(0,0,0,0.15);
+    -moz-box-shadow: 2px 19px 45px 14px rgba(0,0,0,0.15);
 }
 .grid {
     display: grid;
@@ -113,5 +115,6 @@ img {
 }
 .white {
     color: var(--white);
+    margin-left: 5px;
 }
 
