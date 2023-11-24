@@ -4,30 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <!-- STYLES -->
+  <link rel="preload" href="css/styles.css" as="styles">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | NFT preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <div class="attribution">
+    <main>
+      <div class="background card border-radius grid">
+        <div class="card--img ">
+          <img class="border-radius" src="images/image-equilibrium.jpg" alt="favicon">
+        </div>
+        <div class="card--info">
+          <h1 class="card--info__title">Equilibrium #3429</h1>
+          <p class="card--info__pg">Our Equilibrium collection promotes balance and calm</p>
+        </div>
+        <div class="card--icon">
+          <div class="icon colora" >
+            <img src="images/icon-ethereum.svg" alt="ethereum" >
+            <span>0.041 ETH</span>
+          </div>
+          <div class="icon colorb">
+            <img src="images/icon-clock.svg" alt="clock">
+            <span>3 days left</span>     
+          </div>
+        </div>
+        <div class="card--avatar">
+          <img src="images/image-avatar.png" alt="image-avatar">
+          <span class="soft">Creation of</span> <span class="white">Jules Wyvern</span>
+        </div>
+      </div>
+    </main>
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 </html>

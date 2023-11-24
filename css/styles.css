@@ -1,0 +1,117 @@
+:root {
+    --font-main: 'Outfit', sans-serif;
+    --font-secondary: 'Fraunces', serif;
+    /* COLOR */
+    --main-BG: hsl(217, 54%, 11%);
+    --card-BG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --white: hsl(0, 0%, 100%)
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *::before, *::after {
+    box-sizing: inhherit;
+}
+body {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    background-color: var(--main-BG);
+    font-family: var(--font-main);
+    margin: 0;
+}
+
+/* GLOBALS */
+p {
+    font-family: var(--font-main);
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-inline-size: 100%;
+    display: block;
+}
+/* UTILITIES */
+.no-padding {
+    padding: 0;
+}
+.no-margin {
+    margin: 0;
+}
+.center-text{
+    text-align: center;
+}
+.border-radius {
+    border-radius: 1rem;
+}
+
+/* MAIN */
+.background {
+
+}
+.card { 
+    max-height: 50rem;
+    max-inline-size: 28rem;
+    min-inline-size: 20rem;
+    padding: 1.8rem;
+    background-color: var(--card-BG);
+}
+.grid {
+    display: grid;
+    grid-auto-rows: max-content;
+}
+.card--info__title {
+    color: var(--white);
+}
+.card--info__pg {
+    color: var(--Soft-blue);
+    font-size: 1.5rem;
+}
+.card--icon {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    border-bottom: 1px solid var(--line);
+    padding: 1rem 0rem 2rem 0rem;
+}
+.icon {
+    display: flex;
+    align-items: center;
+}
+.icon img {
+    margin-right: 0.5rem;
+}
+.colora {
+    color: var(--Cyan);
+}
+.colorb {
+    color: var(--Soft-blue);
+}
+.card--avatar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1rem;
+}
+.card--avatar img {
+    border:1px solid var(--white);
+    max-width: 10%;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+.card--avatar span{
+    /* color: var(--Soft-blue); */
+    font-size: 1.4rem;
+}
+.soft {
+    color: var(--Soft-blue);
+}
+.white {
+    color: var(--white);
+}
+
