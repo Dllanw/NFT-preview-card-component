@@ -33,14 +33,6 @@ a {
     color: white;
     text-decoration: none;
 }
-a::before{
-    content: "♥";
-    opacity: 0;
-}
-a:hover::before {
-    opacity: 0.9;
-    color: var(--Cyan);
-}
 img {
     max-inline-size: 100%;
     display: block;
@@ -64,8 +56,8 @@ img {
     background-color: var(--card-BG);
 }
 .card { 
-    max-height: 50rem;
-    max-inline-size: 26rem;
+    max-block-size: 100%;
+    max-inline-size: 28rem;
     min-inline-size: 20rem;
     padding: 1.8rem;
     box-shadow: 2px 19px 45px 14px rgba(0,0,0,0.15);
@@ -101,6 +93,7 @@ img {
 }
 .card--info__title {
     color: var(--white);
+    margin-top: 2rem;
 }
 .card--info__title:hover {
     cursor: pointer;
@@ -113,7 +106,7 @@ img {
 .card--icon {
     display: flex;
     justify-content: space-between;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     border-bottom: 1px solid var(--line);
     padding: 1rem 0rem 2rem 0rem;
 }
@@ -134,7 +127,7 @@ img {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 1rem;
+    margin: 2rem 0rem 0.5rem 0rem;
 }
 .card--avatar img {
     border:1px solid var(--white);
@@ -144,7 +137,7 @@ img {
 }
 .card--avatar span{
     /* color: var(--Soft-blue); */
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 .card--avatar__text {
     color: var(--Soft-blue);
@@ -157,10 +150,4 @@ img {
     cursor: pointer;
     color: var(--Cyan);
 }
-.attribution {
-    font-family: var(--font-main);
-    font-size: 1rem;
-    margin-top: 1rem;
-    text-align: center;
-    color: var(--Soft-blue);
-}
+
